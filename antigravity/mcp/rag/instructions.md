@@ -1,0 +1,1 @@
+RAG local sobre Ollama. Fluxo agentico: rag_search -> avaliar -> rag_expand/rag_grep -> refinar a consulta -> responder citando arquivo:linha.

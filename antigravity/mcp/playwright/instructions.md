@@ -1,0 +1,2 @@
+# Playwright MCP Server
+Provides end-to-end browser automation, navigation, accessibility inspection (`browser_snapshot`), element interactions (`browser_click`, `browser_type`), screenshots, and console logs.

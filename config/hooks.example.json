@@ -1,0 +1,38 @@
+{
+  "segundo-cerebro-e-ollama": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python ~/.gemini/config/hooks/agy_hooks.py session_start",
+        "timeout": 20
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python ~/.gemini/config/hooks/agy_hooks.py pre_invocation",
+        "timeout": 25
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "write_file|edit_file|Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ~/.gemini/config/hooks/agy_hooks.py pre_tool_use",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python ~/.gemini/config/hooks/agy_hooks.py stop",
+        "timeout": 25
+      }
+    ]
+  }
+}

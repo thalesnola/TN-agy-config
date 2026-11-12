@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+*.pem
+id_rsa*
+.credentials.json
+*.bak*

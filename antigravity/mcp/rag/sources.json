@@ -1,0 +1,1 @@
+{"name":"sources","description":"Lista os arquivos indexados numa colecao — util para saber o que esta coberto.","parameters":{"properties":{"collection":{"default":"default","title":"Collection","type":"string"},"path_filter":{"default":"","title":"Path Filter","type":"string"}},"title":"sourcesArguments","type":"object"}}

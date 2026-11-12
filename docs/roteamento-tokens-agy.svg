@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 900" width="1280" height="900" font-family="Calibri, 'Segoe UI', Arial, sans-serif">
+<rect width="1280" height="900" fill="#fff"/>
+<text x="30" y="42" font-size="19.5" font-weight="bold" fill="#1a2230" text-anchor="start">Hierarquia em Escada e Roteamento de Tokens (Argon -&gt; Opus | Flash 3.8 -&gt; Sonnet | Ollama Local)</text>
+<text x="30" y="62" font-size="11.8" font-weight="normal" fill="#4a5364" text-anchor="start">Cérebro: Argon -&gt; Opus  |  Agentes Rápidos (sem limite de arquivo + despacho local sob demanda): Flash 3.8 -&gt; Sonnet  |  Bunker: Ollama Local</text>
+<defs><marker id="arrow-0072B2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0072B2"/></marker><marker id="arrow-56B4E9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#56B4E9"/></marker><marker id="arrow-009E73" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#009E73"/></marker><marker id="arrow-E69F00" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#E69F00"/></marker><marker id="arrow-D55E00" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#D55E00"/></marker><marker id="arrow-4a5364" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4a5364"/></marker></defs>
+<rect x="22" y="76" width="1112" height="26" rx="3" fill="#f4f6fa" stroke="#d6dbe4"/>
+<rect x="30" y="82" width="22" height="14" fill="#eaf3f9" stroke="#0072B2" stroke-width="2.4"/>
+<text x="58" y="93" font-size="10.8" font-weight="normal" fill="#1a2230" text-anchor="start">Camada 1: Cérebro em Escada (Argon -&gt; Opus)</text>
+<rect x="282.339375" y="82" width="22" height="14" fill="#eef8fd" stroke="#56B4E9" stroke-width="2.0" stroke-dasharray="8 3"/>
+<text x="310.339375" y="93" font-size="10.8" font-weight="normal" fill="#1a2230" text-anchor="start">Camada 2: Agentes Rápidos (Flash 3.8 -&gt; Sonnet)</text>
+<rect x="543.8266875" y="82" width="22" height="14" fill="#eaf7f2" stroke="#009E73" stroke-width="2.2" stroke-dasharray="8 3 2 3"/>
+<text x="571.8266875" y="93" font-size="10.8" font-weight="normal" fill="#1a2230" text-anchor="start">Camada 3: Executores Locais (Ollama)</text>
+<rect x="757.4784375" y="82" width="22" height="14" fill="#fdf5e6" stroke="#E69F00" stroke-width="1.8" stroke-dasharray="5 3"/>
+<text x="785.4784375" y="93" font-size="10.8" font-weight="normal" fill="#1a2230" text-anchor="start">Contingência (429 / Fim de Crédito)</text>
+<rect x="961.0541250000001" y="82" width="22" height="14" fill="#fdede4" stroke="#D55E00" stroke-width="2.0" stroke-dasharray="2 2.5"/>
+<text x="989.0541250000001" y="93" font-size="10.8" font-weight="normal" fill="#1a2230" text-anchor="start">Premissa: Analisar &amp; Distribuir</text>
+<rect x="30" y="120" width="1220" height="255" rx="6" fill="#f8fafc" stroke="#d6dbe4" stroke-width="1.2"/>
+<text x="44" y="140" font-size="11.5" font-weight="bold" fill="#4a5364" text-anchor="start">DOMÍNIO NUVEM — HIERARQUIA EM ESCADA (CÉREBRO: ARGON -&gt; OPUS  |  AGENTES RÁPIDOS: FLASH 3.8 -&gt; SONNET)</text>
+<text x="1235" y="140" font-size="10.5" font-weight="bold" fill="#0072B2" text-anchor="end">Repositório: github.com/thalesnola/agy-tokenrouter</text>
+<rect x="45" y="155" width="250" height="205" rx="4" fill="#ffffff" stroke="#D55E00" stroke-width="2.0" stroke-dasharray="2 2.5"/>
+<rect x="45" y="155" width="250" height="30" rx="4" fill="#fdede4" stroke="#D55E00" stroke-width="1"/>
+<text x="57" y="175" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">0. Contexto &amp; Segundo Cérebro</text>
+<rect x="230.21492187500002" y="161" width="56.785078125" height="18" rx="3" fill="#D55E00" stroke="none"/>
+<text x="258.60746093750004" y="173" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PRE-FLIGHT</text>
+<text x="57" y="203" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">Hooks Nativos (~/.gemini/config):</text>
+<text x="57" y="220" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• SessionStart: perfil-maquina.py</text>
+<text x="57" y="237" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• PreInvocation: consultar.py (Vault)</text>
+<text x="57" y="254" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• PreToolUse: validação de escrita técnica</text>
+<text x="57" y="271" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• Stop: auditar.py (integridade)</text>
+<text x="57" y="288" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• Git Hook: instalar-hook-git.py</text>
+<text x="57" y="305" font-size="10.6" font-weight="bold" fill="#D55E00" text-anchor="start">Grafo local: graphify query primeiro</text>
+<text x="57" y="322" font-size="10.6" font-weight="bold" fill="#D55E00" text-anchor="start">Premissa: Analisar &amp; Distribuir</text>
+<rect x="360" y="155" width="405" height="205" rx="4" fill="#ffffff" stroke="#0072B2" stroke-width="2.4"/>
+<rect x="360" y="155" width="405" height="30" rx="4" fill="#eaf3f9" stroke="#0072B2" stroke-width="1"/>
+<text x="372" y="175" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">1. Cérebro em Escada (Decisão &amp; Comando)</text>
+<rect x="682.42171875" y="161" width="74.57828125" height="18" rx="3" fill="#0072B2" stroke="none"/>
+<text x="719.7108593749999" y="173" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">ARGON -&gt; OPUS</text>
+<text x="372" y="203" font-size="10.6" font-weight="bold" fill="#0072B2" text-anchor="start">Escada do Cérebro: 1º Gemini 4 Argon -&gt; 2º Claude Opus</text>
+<text x="372" y="220" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Exclusivo: Arquitetura, trade-offs, synthesis final</text>
+<text x="372" y="237" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Ação Direta: &lt;= 2 arquivos conhecidos (edição rápida)</text>
+<text x="372" y="254" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">Comando Local: Demanda distribuição aos modelos locais</text>
+<text x="372" y="271" font-size="10.6" font-weight="bold" fill="#D55E00" text-anchor="start">PROTEÇÃO DA JANELA DO CÉREBRO (Proibido ler direto):</text>
+<text x="372" y="288" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">• Varredura &gt; 3 arquivos brutos -&gt; Delegar Camada 2</text>
+<text x="372" y="305" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">• Arquivos/logs volumosos -&gt; Delegar Camada 2</text>
+<text x="372" y="322" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">• Acervo documental bruto -&gt; Delegar Camada 2/3</text>
+<rect x="870" y="155" width="365" height="205" rx="4" fill="#ffffff" stroke="#56B4E9" stroke-width="2.0" stroke-dasharray="8 3"/>
+<rect x="870" y="155" width="365" height="30" rx="4" fill="#eef8fd" stroke="#56B4E9" stroke-width="1"/>
+<text x="882" y="175" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">2. Agentes Rápidos em Escada</text>
+<rect x="1132.556328125" y="161" width="94.443671875" height="18" rx="3" fill="#56B4E9" stroke="none"/>
+<text x="1179.7781640624999" y="173" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">FLASH 3.8 -&gt; SONNET</text>
+<text x="882" y="203" font-size="10.6" font-weight="bold" fill="#0072B2" text-anchor="start">Escada Rápida: 1º Gemini 3.8 Flash -&gt; 2º Claude Sonnet</text>
+<text x="882" y="220" font-size="10.6" font-weight="bold" fill="#009E73" text-anchor="start">CAPACIDADE DE LEITURA: SEM LIMITE de tamanho de arquivo!</text>
+<text x="882" y="237" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• Lê arquivos, logs e CSVs de qualquer extensão/linhas</text>
+<text x="882" y="254" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• Varre codebase (&gt; 3 arquivos) e extrai anomalias</text>
+<text x="882" y="271" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">• Devolve síntese limpa (1-3 parágrafos) ao Cérebro</text>
+<text x="882" y="288" font-size="10.6" font-weight="bold" fill="#0072B2" text-anchor="start">DISTRIBUIÇÃO PARA MODELOS LOCAIS (Camada 3):</text>
+<text x="882" y="305" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">• Pode distribuir tarefas ao Ollama local (DSH, Qwen,</text>
+<text x="882" y="322" font-size="10.6" font-weight="bold" fill="#D55E00" text-anchor="start">  OpenCode) desde que o CÉREBRO demande a distribuição!</text>
+<line x1="295" y1="255" x2="358" y2="255" stroke="#0072B2" stroke-width="2.0" marker-end="url(#arrow-0072B2)"/>
+<text x="326" y="245" font-size="10.0" font-weight="bold" fill="#0072B2" text-anchor="middle">Contexto</text>
+<line x1="765" y1="215" x2="868" y2="215" stroke="#56B4E9" stroke-width="2.0" stroke-dasharray="8 3" marker-end="url(#arrow-56B4E9)"/>
+<text x="816" y="204" font-size="10.0" font-weight="bold" fill="#56B4E9" text-anchor="middle">Delega + Demanda</text>
+<line x1="868" y1="265" x2="765" y2="265" stroke="#0072B2" stroke-width="1.6" stroke-dasharray="4 2" marker-end="url(#arrow-0072B2)"/>
+<text x="816" y="282" font-size="10.0" font-weight="bold" fill="#0072B2" text-anchor="middle">Síntese 1-3 par.</text>
+<rect x="30" y="390" width="1220" height="46" rx="4" fill="#eef2f6" stroke="#d6dbe4" stroke-width="1"/>
+<text x="44" y="408" font-size="11.2" font-weight="bold" fill="#1a2230" text-anchor="start">PORTA DE DISTRIBUIÇÃO PARA MODELOS LOCAIS (ACIONADA PELO CÉREBRO OU DISTRIBUÍDA PELOS RÁPIDOS SOB DEMANDA)</text>
+<text x="44" y="426" font-size="10.5" font-weight="normal" fill="#4a5364" text-anchor="start">Hardware: Dell Pro Max 16 (Core Ultra 9 285H | 64 GB DDR5 | RTX PRO 1000 8 GB)  |  Ollama: NUM_PARALLEL=1 (em série) | CTX=32768 | FLASH_ATTN=1 | KV=q8_0</text>
+<polyline points="562,360 562,388" fill="none" stroke="#0072B2" stroke-width="2.2" marker-end="url(#arrow-0072B2)"/>
+<text x="554" y="380" font-size="10.0" font-weight="bold" fill="#0072B2" text-anchor="end">Despacho Direto do Cérebro</text>
+<polyline points="1052,360 1052,388" fill="none" stroke="#56B4E9" stroke-width="2.2" stroke-dasharray="8 3" marker-end="url(#arrow-56B4E9)"/>
+<text x="1044" y="380" font-size="10.0" font-weight="bold" fill="#56B4E9" text-anchor="end">Agente Rápido distribui (sob demanda)</text>
+<polyline points="168,436 168,464" fill="none" stroke="#009E73" stroke-width="1.8" stroke-dasharray="8 3 2 3" marker-end="url(#arrow-009E73)"/>
+<text x="176" y="455" font-size="10.0" font-weight="bold" fill="#009E73" text-anchor="start">1-4 arq / Revisão (~70s)</text>
+<polyline points="468,436 468,464" fill="none" stroke="#009E73" stroke-width="1.8" stroke-dasharray="8 3 2 3" marker-end="url(#arrow-009E73)"/>
+<text x="476" y="455" font-size="10.0" font-weight="bold" fill="#009E73" text-anchor="start">Lote &gt;= 5 arq (sem fatiar)</text>
+<polyline points="775,436 775,464" fill="none" stroke="#009E73" stroke-width="1.8" stroke-dasharray="8 3 2 3" marker-end="url(#arrow-009E73)"/>
+<text x="783" y="455" font-size="10.0" font-weight="bold" fill="#009E73" text-anchor="start">Acervo / Entidades (~2m)</text>
+<polyline points="1085,436 1085,464" fill="none" stroke="#E69F00" stroke-width="1.8" stroke-dasharray="5 3" marker-end="url(#arrow-E69F00)"/>
+<text x="1093" y="455" font-size="10.0" font-weight="bold" fill="#E69F00" text-anchor="start">MCP Direta / HTTP 429</text>
+<rect x="30" y="467" width="1220" height="275" rx="6" fill="#f4fbf7" stroke="#009E73" stroke-width="1.5" stroke-dasharray="8 3 2 3"/>
+<text x="44" y="486" font-size="11.5" font-weight="bold" fill="#009E73" text-anchor="start">DOMÍNIO LOCAL (CUSTO ZERO DE CRÉDITO — NENHUM DADO SAI DA MÁQUINA)</text>
+<text x="1235" y="486" font-size="10.5" font-weight="bold" fill="#1a2230" text-anchor="end">Regra: Sempre o modelo completo instalado (descarregar residentes com ollama stop)</text>
+<rect x="45" y="497" width="280" height="188" rx="4" fill="#ffffff" stroke="#009E73" stroke-width="2.2" stroke-dasharray="8 3 2 3"/>
+<rect x="45" y="497" width="280" height="30" rx="4" fill="#eaf7f2" stroke="#009E73" stroke-width="1"/>
+<text x="57" y="517" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">3A. dsh-local (DSH 0.2.0-rc.2)</text>
+<rect x="262.652265625" y="503" width="54.347734375" height="18" rx="3" fill="#009E73" stroke="none"/>
+<text x="289.82613281249996" y="515" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">CAMADA 3</text>
+<text x="57" y="545" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">Modelo: gpt-oss:20b</text>
+<text x="57" y="562" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">Split: 59% CPU / 41% GPU (CTX 32768)</text>
+<text x="57" y="579" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Escopo: 1 a 4 arquivos (~70 s)</text>
+<text x="57" y="596" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Uso 1: Código pequeno/médio mecânico</text>
+<text x="57" y="613" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Uso 2: Revisor de 2ª família local</text>
+<text x="57" y="630" font-size="10.6" font-weight="bold" fill="#009E73" text-anchor="start">Saída: Diff auditável (Cérebro/Rápido)</text>
+<rect x="343" y="497" width="295" height="188" rx="4" fill="#ffffff" stroke="#009E73" stroke-width="2.2" stroke-dasharray="8 3 2 3"/>
+<rect x="343" y="497" width="295" height="30" rx="4" fill="#eaf7f2" stroke="#009E73" stroke-width="1"/>
+<text x="355" y="517" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">3B. qwen-local (Qwen Code 0.24.7)</text>
+<rect x="553.7503125000001" y="503" width="76.2496875" height="18" rx="3" fill="#009E73" stroke="none"/>
+<text x="591.87515625" y="515" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">LOTE MECÂNICO</text>
+<text x="355" y="545" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">Modelo: Qwen3-Coder-Next :NOTPL (~36 GB)</text>
+<text x="355" y="562" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">Split: 84% CPU / 16% GPU (UD-Q3_K_XL)</text>
+<text x="355" y="579" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Escopo: Lote mecânico &gt;= 5 arquivos</text>
+<text x="355" y="596" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Piso: 2-4 min (~26k tokens preâmbulo)</text>
+<text x="355" y="613" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">Regra: Enviar lote inteiro num só prompt</text>
+<text x="355" y="630" font-size="10.6" font-weight="bold" fill="#D55E00" text-anchor="start">Fila: Execução serial obrigatória</text>
+<rect x="656" y="497" width="295" height="188" rx="4" fill="#ffffff" stroke="#009E73" stroke-width="2.2" stroke-dasharray="8 3 2 3"/>
+<rect x="656" y="497" width="295" height="30" rx="4" fill="#eaf7f2" stroke="#009E73" stroke-width="1"/>
+<text x="668" y="517" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">3C. opencode-local &amp; LightRAG</text>
+<rect x="899.283359375" y="503" width="43.716640625" height="18" rx="3" fill="#009E73" stroke="none"/>
+<text x="921.1416796875001" y="515" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">ACERVO</text>
+<text x="668" y="545" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">Modelo: nemotron-3.5-lightning:30b-a3b</text>
+<text x="668" y="562" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">Agente: investigador (~2 min, 25 GB)</text>
+<text x="668" y="579" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">MCPs Exclusivos: rag + forense + LightRAG</text>
+<text x="668" y="596" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">Escopo: Busca semântica/exata, timeline,</text>
+<text x="668" y="613" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">  grafo de entidades (porta 9621)</text>
+<text x="668" y="630" font-size="10.6" font-weight="bold" fill="#009E73" text-anchor="start">Saída: Síntese estruturada local</text>
+<rect x="969" y="497" width="266" height="188" rx="4" fill="#ffffff" stroke="#E69F00" stroke-width="1.8" stroke-dasharray="5 3"/>
+<rect x="969" y="497" width="266" height="30" rx="4" fill="#fdf5e6" stroke="#E69F00" stroke-width="1"/>
+<text x="981" y="517" font-size="11.8" font-weight="bold" fill="#1a2230" text-anchor="start">4. Contingência &amp; ollama-router</text>
+<rect x="1171.6978125" y="503" width="55.3021875" height="18" rx="3" fill="#E69F00" stroke="none"/>
+<text x="1199.34890625" y="515" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PLANO A/B</text>
+<text x="981" y="545" font-size="10.6" font-weight="bold" fill="#1a2230" text-anchor="start">MCP AGY: ollama_refactor (qwen3:30b)</text>
+<text x="981" y="562" font-size="10.6" font-weight="normal" fill="#1a2230" text-anchor="start">MCP AGY: ollama_code_review (7b)</text>
+<text x="981" y="579" font-size="10.6" font-weight="bold" fill="#E69F00" text-anchor="start">Plano A (AGY): OmniRoute + RTK</text>
+<text x="981" y="596" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">  (comutação priority em HTTP 429)</text>
+<text x="981" y="613" font-size="10.6" font-weight="bold" fill="#E69F00" text-anchor="start">Plano B (Bunker): claude-local / MCP</text>
+<text x="981" y="630" font-size="10.6" font-weight="normal" fill="#4a5364" text-anchor="start">  (hook StopFailure no fim de crédito)</text>
+<rect x="45" y="695" width="1190" height="36" rx="4" fill="#fff8eb" stroke="#E69F00" stroke-width="1.8" stroke-dasharray="5 3"/>
+<text x="60" y="717" font-size="10.8" font-weight="bold" fill="#1a2230" text-anchor="start">GATE OBRIGATÓRIO DE CONSOLIDAÇÃO: Todo trabalho de executor local é NÃO REVISADO por definição -&gt; Auditar diff antes de integrar ao branch principal.</text>
+<rect x="30" y="755" width="1220" height="60" rx="4" fill="#f4f6fa" stroke="#d6dbe4" stroke-width="1"/>
+<text x="44" y="775" font-size="11.2" font-weight="bold" fill="#1a2230" text-anchor="start">DIRETRIZ OPERACIONAL SOBERANA (ATUALIZADA EM 11/2026):</text>
+<text x="405" y="775" font-size="10.8" font-weight="normal" fill="#1a2230" text-anchor="start">1) Cérebro: 1º Gemini 4 Argon -&gt; 2º Claude Opus.  2) Rápidos: 1º Gemini 3.8 Flash -&gt; 2º Claude Sonnet (SEM limite de arquivo).</text>
+<text x="44" y="797" font-size="10.8" font-weight="normal" fill="#4a5364" text-anchor="start">3) Agentes Rápidos podem distribuir tarefas aos modelos locais sob demanda do Cérebro.  4) O usuário decide com soberania os inputs trabalhados.</text>
+<line x1="30" y1="832" x2="1250" y2="832" stroke="#d6dbe4"/>
+<text x="30" y="848" font-size="9.5" font-weight="normal" fill="#4a5364" text-anchor="start">Fonte: Segundo Cérebro (AGENTS.md, agy-tokenrouter e claude-tokenrouter) (Vault Canônica ACERVO) | SHA512 dos dados: 987fa836fec8... | Elaborado em 11/11/2026</text>
+</svg>

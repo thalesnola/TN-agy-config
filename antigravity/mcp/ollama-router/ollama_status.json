@@ -1,0 +1,1 @@
+{"name":"ollama_status","description":"Check Ollama service status and list available local models.","parameters":{"properties":{},"title":"ollama_statusArguments","type":"object"}}

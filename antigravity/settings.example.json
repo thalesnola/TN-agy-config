@@ -1,0 +1,10 @@
+{
+  "theme": "default",
+  "model": "gemini-4-argon-high",
+  "fallbackModel": "claude-opus",
+  "fastModel": "gemini-3.8-flash",
+  "enablePlugins": true,
+  "enableSkills": true,
+  "enableHooks": true,
+  "contextBudgetTokens": 32768
+}

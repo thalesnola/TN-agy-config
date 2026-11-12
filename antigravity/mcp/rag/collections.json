@@ -1,0 +1,1 @@
+{"name":"collections","description":"Lista as colecoes existentes com contagem de arquivos, chunks e modelo usado.","parameters":{"properties":{},"title":"collectionsArguments","type":"object"}}

@@ -1,0 +1,1 @@
+{"name":"forget","description":"Apaga uma colecao inteira. Exige confirm=True — a operacao e irreversivel.","parameters":{"properties":{"collection":{"title":"Collection","type":"string"},"confirm":{"default":false,"title":"Confirm","type":"boolean"}},"required":["collection"],"title":"forgetArguments","type":"object"}}

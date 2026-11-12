@@ -1,0 +1,6 @@
+interface:
+  display_name: "Img to HTML (ChatGPT / Flow)"
+  short_description: "Mock de UI → HTML/CSS/JS estático em etapas, assets gerados no ChatGPT ou no Google Flow"
+  default_prompt: "Use $img-to-html-flow: recrie este mock em index.html + assets/styles.css em etapas com aprovação; os assets saem do ChatGPT ou do Google Flow (eu subo os recortes), com fundo tratado localmente."
+policy:
+  allow_implicit_invocation: false
